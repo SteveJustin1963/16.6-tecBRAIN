@@ -1,4 +1,4 @@
-# 16.6-tecBRAIN
+# tec-BRAIN
 
 A reservoir CPU brain using echo induced piezoelectric silicon jelly and special circuits. 
 
