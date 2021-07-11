@@ -24,7 +24,7 @@ The code (asm, forth or basic) will try to use the 9511 maths chip on the tec-AP
 - ADC, DAC https://github.com/SteveJustin1963/tec-ADC-DAC
 
 
-## Piezo TX/RX
+### Piezo TX/RX circuit
 
 https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
 
