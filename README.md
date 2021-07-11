@@ -10,13 +10,18 @@ The concept of Reservoir Computing, in simple terms is a method to induce an sig
 
 
 The code (asm, forth or basic) will try to use the 9511 maths chip on the tec-APUS addon; to create a simple learning and behavior system. A range of inputs can be gathered from other addons, eg
+### Inputs
 - Vision with 8x8 bit ADNS2620 vision chip found in the common optical mouse
 - A microphone 
-- ADC, DAC 
 - Electroencephalography IO
+
+### outputs
 - Output expressions can be sent to Speech SPO256 addon
 - 8x8 LED matrix addon to make emoji shapes or a mouth or eye animated image
 - Make a animatronic head that has head movement and incorporates the eyes, ears and mouth parts  
+
+- ADC, DAC 
+
 
 ## Piezo TX/RX
 
