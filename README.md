@@ -13,7 +13,7 @@ The code (asm, forth or basic) will try to use the 9511 maths chip on the tec-AP
 ### Inputs
 - Vision with 8x8 bit ADNS2620 vision chip found in the common optical mouse
 - A microphone 
-- Electroencephalography IO
+- EEG (Electroencephalography)
 - tactile
 
 ### outputs
