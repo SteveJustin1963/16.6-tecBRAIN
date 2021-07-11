@@ -18,9 +18,9 @@ The code (asm, forth or basic) will try to use the 9511 maths chip on the tec-AP
 - 8x8 LED matrix addon to make emoji shapes or a mouth or eye animated image
 - Make a animatronic head that has head movement and incorporates the eyes, ears and mouth parts  
 
-## Piezo rx
+## Piezo TX/RX
 
-## Piezo tx
+https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
 
 
 
