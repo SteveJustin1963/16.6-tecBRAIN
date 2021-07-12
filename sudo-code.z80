@@ -1,4 +1,4 @@
-setup const
+; setup const
 IN0 equ IN0
 IN1 equ 
 IN2 equ 
@@ -6,22 +6,28 @@ IN3 equ
 IN4 equ 
 IN5 equ 
 IN6 equ 
-IN7
+IN7 equ
+
+STB-ADD equ 7h
+
 
 
 ; connect analog source
  
-
-ADC:
-
 ;int routine
+ADC:
 push stack
-write strobe address to start ADC
-read 
+; write strobe address to start ADC
+ ld a,x
+write (STB-ADD), 
+
+
 SELECTED ANALOG ADDRESS LINE
 CHANNEL C B A
 A15,14,13 with strobe address
 ;strobe eg 7 
+
+read 
 IN0 L L L, 000000000000111, 0007h
 IN1 L L H, 001000000000111, 1007h
 IN2 L H L, 010000000000111, 2007h
