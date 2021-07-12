@@ -31,6 +31,6 @@ https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a
 
 Gerbers; https://github.com/SteveJustin1963/tec-BRAIN/blob/master/docs/Gerber_PCB_Piezo%20TXRX.zip
 
-![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/Schematic_Piezo%20TXRX_2021-07-12.png)
+![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/Schematic_Piezo%20TXRX_2021-07-12-2.png)
 
 
