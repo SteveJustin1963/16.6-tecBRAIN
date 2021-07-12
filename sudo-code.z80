@@ -1,22 +1,27 @@
 setup const
 
-test-tone
-  output tone
- or use ouside source
+; connect analog source
  
+
+ADC:
+
+;int routine
+push stack
+write strobe address to start ADC
 read 
 SELECTED ANALOG ADDRESS LINE
 CHANNEL C B A
-IN0 L L L
-IN1 L L H
-IN2 L H L
-IN3 L H H
-IN4 H L L
-IN5 H L H
-IN6 H H L
-IN7 H H H
+A15,14,13 with strobe address
+;strobe eg 7 
+IN0 L L L, 000000000000111, 0007h
+IN1 L L H, 001000000000111, 1007h
+IN2 L H L, 010000000000111, 2007h
+IN3 L H H, 011000000000111, 3007h
+IN4 H L L, 100000000000111, 4007h
+IN5 H L H, 101000000000111, 5007h
+IN6 H H L, 110000000000111, 6007h
+IN7 H H H, 111000000000111, 7007h
 
-write to buffer
-  
- 
- jp tes-tone
+write HL 
+pop stack
+Return
