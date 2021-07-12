@@ -14,11 +14,11 @@ This effect is taking a complex input and expanding it into more dimensions or n
 
 A range of mediums can be used, from simple water in a bucket with light reflection or sophisticated optical fibre loop. We will use firm but wobbly object, in this case a soft silicon ball from Kmart. Later perhaps a brain shaped soft red silicon or gelatine for greater visual effect.
 
-We mount the TX piezo 5mm above a 100x100x12 MDF from the edges. Then mount the ball atop the piezo just touching it in the middle. We erect a vertical wood 20x200 pole to the side and connect to the of ball. The 8x RX piezo’s are connected over the ball face heavenly spread.
+We mount the TX piezo 5mm above a 100x100x12 MDF from the edges. Then mount the ball atop the piezo just touching it in the middle. We erect a vertical wood 20x20x200 pole to the side and connect to the ball. The 8x RX piezo’s are connected over the ball face evenly spread and also support from the edge so as to absorb as much vibration as possible. Much experimentation is needed to get the best result.
 
-The code will read the 8 RX inputs while the TX is pumping signal into the ball. Code will try to use AI or simple pattern recognition to capture impressions of the vibrations as numeral tables. Sample time will have to be limited. If we can the 9511 maths chip on the tec-APUS will make coding simpler (maybe) 
+The code will read the 8 RX inputs while the TX is pumping signal into the ball. Code will capture then classify with simple AI or regression to classify the signal impressions as numerical tables. Sample time has to be considered and and limited as we dont want much data. Try and use the tec-APUS-9511 and or Forth on to simplify code (maybe). 
 
-A simple learning and behavior system will evolve thru more coding. A range of different inputs can be gathered to create a library of recognition.
+A simple learning and behavior system can evolve. A range of different inputs can be gathered to create a library of recognitions.
 
 
 ### Inputs
@@ -42,6 +42,8 @@ https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a
 Gerbers; https://github.com/SteveJustin1963/tec-BRAIN/blob/master/docs/Gerber_PCB_Piezo%20TXRX.zip
 
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/Schematic_Piezo%20TXRX_2021-07-12-2.png)
+
+
 
 
 
