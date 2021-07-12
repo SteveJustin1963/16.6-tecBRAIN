@@ -6,9 +6,9 @@
 
 The general goal is to use Reservoir Computing to simplify the processing of spreading out a complex input signal pattern. This allows the expansion of the inputs into more dimensions where simple pattern recognition techniques are applied, in hardware and/or software. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy.
 
-The concept of Reservoir Computing in simple terms is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data that can be processed by circuit and software. The pattern that is formed will expand into high and low points in fixed positions, thus expanding a complex input signal into a more recognisable fixed pattern. 
+The concept of Reservoir Computing in simple terms is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data that can be processed by circuit and software. The pattern that is formed will expand into high and low nodes and anit-nodes over various positions, thus expanding a complex input signal into a more simpler recognisable pattern. 
 
-A simple version of this we have seen in school using a vibrating plate with sand sprinkled on top. For simple fixed sinusoidal inputs simple geometric patterns form, for complex sounds of more complex fixed patterns can be derived. 
+A simple version of this we have seen in school using a vibrating plate with sand sprinkled on top. For simple fixed sinusoidal inputs forms simple geometric patterns, as  the frequency or complexity changes, more complex patterns are derived. 
 
 This effect is taking a complex input and expanding it into more dimensions or nodes etc, which are easier for hardware and software methods to analyse. 
 
