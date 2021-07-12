@@ -12,7 +12,7 @@ A simple version of this we have seen in school using a vibrating plate with san
 
 This effect is taking a complex input and expanding it into more dimensions or nodes etc, which are easier for hardware and software methods to analyse. 
 
-A range of mediums can be used, from simple water in a bucket with light reflection or sophisticated optical fibre loop. We will use firm but wobbly object, in this case a soft silicon ball from Kmart. Later perhaps a brain shaped soft red silicon or edible ed gelatine for greater effect.
+A range of mediums can be used, from simple water in a bucket with light reflection or sophisticated optical fibre loop. We will use firm but wobbly object, in this case a soft silicon ball from Kmart. Later perhaps a brain shaped soft red silicon or gelatine for greater effect.
 
 We mount the TX piezo 5mm above a 100x100x12 MDF from the edges. Then mount the ball atop the piezo just touching it in the middle. We erect a vertical wood 20x200 pole to the side and connect to the of ball. The 8x RX piezo’s are connected over the ball face heavenly spread.
 
