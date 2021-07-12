@@ -1,4 +1,13 @@
 setup const
+IN0 equ IN0
+IN1 equ 
+IN2 equ 
+IN3 equ 
+IN4 equ 
+IN5 equ 
+IN6 equ 
+IN7
+
 
 ; connect analog source
  
