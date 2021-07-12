@@ -1,0 +1,22 @@
+setup const
+
+test-tone
+  output tone
+ or use ouside source
+ 
+read 
+SELECTED ANALOG ADDRESS LINE
+CHANNEL C B A
+IN0 L L L
+IN1 L L H
+IN2 L H L
+IN3 L H H
+IN4 H L L
+IN5 H L H
+IN6 H H L
+IN7 H H H
+
+write to buffer
+  
+ 
+ jp tes-tone
