@@ -35,6 +35,9 @@ A simple learning and behavior system can evolve. A range of different inputs ca
 - ADC, DAC https://github.com/SteveJustin1963/tec-ADC-DAC
 
 
+### proto cct
+https://easyeda.com/editor#id=ce6bdd0998024d589a624073c00b3b42|cf174ef8df6648e4804a04970f2bdf42
+
 ### Piezo TX/RX circuit
 
 https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
