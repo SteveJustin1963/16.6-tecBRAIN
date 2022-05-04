@@ -4,6 +4,16 @@
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/res1.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
 
+The goal of reservoir computing is to use a complex input signal to generate a repeating pattern that can be processed by a sensor. The concept is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data. The medium can be anything from water to an optical fiber loop. The repeating pattern will expand into high and low nodes and anti-nodes over various positions, expanding a complex input signal into a more simple recognisable pattern.
+
+One example of this is a vibrating plate with sand sprinkled on top. For simple fixed sinusoidal inputs, it forms simple geometric patterns. However, as the frequency or complexity of the input changes, more complex patterns are derived.
+
+This effect takes a complex input and expands it into more dimensions or nodes, which are easier for hardware and software methods to analyse.
+
+A simple learning and behaviour system can evolve from this. A range of different inputs can be gathered to create a library of recognitions.
+
+
+
 The general goal is to use Reservoir Computing to simplify the processing of spreading out a complex input signal pattern. This allows the expansion of the inputs into more dimensions where simple pattern recognition techniques are applied, in hardware and/or software. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy.
 
 The concept of Reservoir Computing in simple terms is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data that can be processed by circuit and software. The pattern that is formed will expand into high and low nodes and anit-nodes over various positions, thus expanding a complex input signal into a more simpler recognisable pattern. 
