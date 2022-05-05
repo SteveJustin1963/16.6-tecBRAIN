@@ -46,7 +46,7 @@ Reservoir computing has been applied to a variety of tasks, including:
 - classification
 - clustering
 - prediction
-- contro
+- control
 - forecasting
 - modeling
 - feature extraction
