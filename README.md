@@ -1,5 +1,8 @@
 # tec-BRAIN
 
+This is a very difficult and ambious project that I hope will evolve nicley and reward richly. 
+
+
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/res1.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
