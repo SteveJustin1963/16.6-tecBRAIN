@@ -112,7 +112,7 @@ Classified output expressions can be sent to
 - try other RC tanks
 - try DOL matrix
 - chaos ccts
-- cellular automata
+- bollow from 2D cellular automata GOL idea
 - optical loop
 - neural / synthetic / organic
 - put into https://github.com/SteveJustin1963/tec-BOT
