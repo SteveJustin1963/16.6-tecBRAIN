@@ -102,16 +102,23 @@ Classified output expressions can be sent to
 - Display 8x8 LED matrix to make emoji shapes or a mouth or eye animated image https://github.com/SteveJustin1963/tec-8x8
 - Move an animatronic head with eyes, ears and mouth parts  https://github.com/SteveJustin1963/tec-FACE
 
-### Both
-- ADC, DAC https://github.com/SteveJustin1963/tec-ADC-DAC
-
 ### Circuits
+- https://github.com/SteveJustin1963/tec-ADC-DAC
 - https://easyeda.com/editor#id=ce6bdd0998024d589a624073c00b3b42|cf174ef8df6648e4804a04970f2bdf42
 - https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
 
 ## Iterate
 - try other RC tanks
 - try DOL matrix
+- chaos ccts
+- cellular automata
+- optical loop
+- neural / synthetic / organic
+- put into https://github.com/SteveJustin1963/tec-BOT
 
-## Ref
+## References
+- http://sprott.physics.wisc.edu/pubs/paper352.pdf
+- https://www.electroschematics.com/simple-surface-microphone/
+- https://www.edn.com/increase-piezoelectric-transducer-acoustic-output-with-a-simple-circuit/
+- http://www.datasheetdir.com/Adc0808-adc0809-8-bit-Compatible-Converters-With-8-channel-Analog-Multiplexer+Application-Notes
 
