@@ -1,6 +1,6 @@
 # tec-BRAIN
 
-This is a very difficult and ambitious project that will take many iterations to work. It will be more tike research than a project for a while.
+This is a very difficult and ambitious project that will take many iterations to work. It will be more like research than a project for a while.
 
 
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
