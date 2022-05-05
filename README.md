@@ -4,31 +4,93 @@
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/res1.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
 
-The goal of reservoir computing is to use a complex input signal to generate a repeating pattern that can be processed by a sensor. The concept is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data. The medium can be anything from water to an optical fiber loop. The repeating pattern will expand into high and low nodes and anti-nodes over various positions, expanding a complex input signal into a more simple recognisable pattern.
-
-One example of this is a vibrating plate with sand sprinkled on top. For simple fixed sinusoidal inputs, it forms simple geometric patterns. However, as the frequency or complexity of the input changes, more complex patterns are derived.
-
-This effect takes a complex input and expands it into more dimensions or nodes, which are easier for hardware and software methods to analyse.
-
-A simple learning and behaviour system can evolve from this. A range of different inputs can be gathered to create a library of recognitions.
+========
 
 
 
-The general goal is to use Reservoir Computing to simplify the processing of spreading out a complex input signal pattern. This allows the expansion of the inputs into more dimensions where simple pattern recognition techniques are applied, in hardware and/or software. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy.
+The goal is to use Reservoir Computing to simplify the processing of spreading out a complex input signal pattern. This allows the expansion of the inputs into more dimensions where simple pattern recognition techniques are applied, in hardware and/or software. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy.
 
-The concept of Reservoir Computing in simple terms is to input a signal into a flexible medium so that it can generate a repeating pattern long enough for a sensor to collect data that can be processed by circuit and software. The pattern that is formed will expand into high and low nodes and anit-nodes over various positions, thus expanding a complex input signal into a more simpler recognisable pattern. 
+## Reservoir Computing
 
-A simple version of this we have seen in school using a vibrating plate with sand sprinkled on top. For simple fixed sinusoidal inputs forms simple geometric patterns, as  the frequency or complexity changes, more complex patterns are derived. 
+Reservoir computing is a computational paradigm that performs information processing using a dynamical system called a reservoir. The basic idea is to use a fixed (but usually high-dimensional and nonlinear) dynamical system as a computational substrate. The system’s dynamics are usually excited by input data, and the system’s current state is read out to perform a task such as pattern recognition, classification, and prediction.
 
-This effect is taking a complex input and expanding it into more dimensions or nodes etc, which are easier for hardware and software methods to analyse. 
+The term “reservoir computing” was coined in 2001 by Jürgen Schmidhuber and Sepp Hochreiter, who applied it to a special type of recurrent neural network called an echo state network.
 
-A range of mediums can be used, from simple water in a bucket with light reflection or sophisticated optical fibre loop. We will use firm but wobbly object, in this case a soft silicon ball from Kmart. Later perhaps a brain shaped soft red silicon or gelatine for greater visual effect.
 
-We mount the TX piezo 5mm above a 100x100x12 MDF from the edges. Then mount the ball atop the piezo just touching it in the middle. We erect a vertical wood 20x20x200 pole to the side and connect to the ball. The 8x RX piezo’s are connected over the ball face evenly spread and also support from the edge so as to absorb as much vibration as possible. Much experimentation is needed to get the best result.
 
-The code will read the 8 RX inputs while the TX is pumping signal into the ball. Code will capture then classify with simple AI or regression to classify the signal impressions as numerical tables. Sample time has to be considered and and limited as we dont want much data. Try and use the tec-APUS-9511 and or Forth on to simplify code (maybe). 
+## Echo state network
 
-A simple learning and behavior system can evolve. A range of different inputs can be gathered to create a library of recognitions.
+An echo state network (ESN) is a recurrent neural network with a “reservoir” of recurrently connected neurons. The state of the reservoir at each time step is read out and used to generate the network output. The reservoir is usually “initialized” by setting the states of the neurons to small random values, and the recurrent connections are typically “trained” by adjusting the connection weights so that the ESN performs a desired task, such as pattern recognition or prediction.
+
+ESNs have been found to be competitive with, or even superior to, traditional recurrent neural networks for a variety of tasks. They are also much simpler to train, since the only “training” required is to adjust the recurrent connection weights; the states of the reservoir neurons are usually set to small random values and are not updated during training.
+
+The term “echo state network” was coined by Jaeger in 2001.
+
+## Liquid state machine
+
+A liquid state machine (LSM) is a recurrent neural network with a “reservoir” of spiking neurons. The state of the reservoir at each time step is read out and used to generate the network output. The reservoir is usually “initialized” by setting the membrane potentials of the neurons to small random values, and the recurrent connections are typically “trained” by adjusting the connection weights so that the LSM performs a desired task, such as pattern recognition or prediction.
+
+LSMs have been found to be competitive with, or even superior to, traditional recurrent neural networks for a variety of tasks. They are also much simpler to train, since the only “training” required is to adjust the recurrent connection weights; the membrane potentials of the reservoir neurons are usually set to small random values and are not updated during training.
+
+The term “liquid state machine” was coined by Maass et al. in 2002.
+
+## Gated recurrent unit
+
+A gated recurrent unit (GRU) is a type of recurrent neural network that has been found to be very effective for modeling sequential data, such as text, speech, and time series data. GRUs are similar to Long Short-Term Memory (LSTM) networks, but they are simpler and have fewer parameters.
+
+GRUs have been used to build successful models for a variety of tasks, including machine translation, speech recognition, and time series prediction.
+
+The term “gated recurrent unit” was coined by Cho et al. in 2014.
+
+## Applications
+
+Reservoir computing has been applied to a variety of tasks, including:
+- classification
+- clustering
+- prediction
+- contro
+- forecasting
+- modeling
+- feature extraction
+- pattern recognition
+- signal processing
+- time series analysis
+
+Reservoir computing has also been used to build successful models for a variety of tasks, including:
+- machine translation
+- speech recognition
+- handwriting recognition
+- time series prediction
+- image classification
+- object recognition
+- facial recognition
+
+## Pros and cons
+
+Reservoir computing has a number of advantages over traditional neural networks, including:
+- simpler training – only the connection weights need to be trained, not the neuron states
+- fewer parameters – since the neuron states are not updated during training, there are fewer parameters to optimize
+- more robust – since the neuron states are not updated during training, the network is less likely to overfit the training data
+- better generalization – since the network is not “memorizing” the training data, it is more likely to generalize to new data
+
+However, reservoir computing also has a number of disadvantages, including:
+- more complex hardware – since the network states are not updated during training, the hardware needs to be able to store and update the states of the neurons
+- more data required – since the network states are not updated during training, more data is required to train the network
+- longer training time – since the network states are not updated during training, the training process can take longer
+
+## Conclusion
+
+Reservoir computing is a powerful computational paradigm that has been shown to be competitive with, or even superior to, traditional neural networks for a variety of tasks. Reservoir computing is also much simpler to train, since the only “training” required is to adjust the recurrent connection weights; the states of the reservoir neurons are usually set to small random values and are not updated during training.
+
+
+## Project
+
+The goal of this tec-1 project is to use a simple version of reservoir computing to help process a complex input signal such as sound, sign and rouch and generate a repeating pattern that can be processed by a sensor. 
+
+We will try and use some sort of flexible medium so that when its fed  an input signal, it can generate a repeating pattern long enough for sensors to collect and store that data. The medium can be varied, examples are, a wobbly object like a firm gel, vibrating water that reflects a light pattern, vibrating plate with sand sprinkled on top, or an optical fiber loop. The repeating pattern expands into nodes and antinodes over various positions, thus expanding a complex input signal into a more simple recognisable pattern, which are easier for hardware and software methods to analyze. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy. A simple learning and classification system can develope from this and stored in a library of recognitions.
+
+We propose to take a hemisphere of firm red gelatine or semi-firm silicone and place a transmit piezo disk on the bottom. This will propagate the ripples out in all directions equally. Then the signals will echo and bounce and creating some standing waves that are collected by 8 receiver  piezo disk. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
+
 
 
 ### Inputs
