@@ -4,8 +4,6 @@
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/res1.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
 
-========
-
 
 
 The goal is to use Reservoir Computing to simplify the processing of spreading out a complex input signal pattern. This allows the expansion of the inputs into more dimensions where simple pattern recognition techniques are applied, in hardware and/or software. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy.
