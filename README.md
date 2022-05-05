@@ -90,26 +90,28 @@ We will try and use some sort of flexible medium so that when its fed  an input 
 We propose to take a hemisphere of firm red gelatine or semi-firm silicone and place a transmit piezo disk on the bottom. This will propagate the ripples out in all directions equally. Then the signals will echo and bounce and creating some standing waves that are collected by 8 receiver  piezo disk. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
 
 
-
-### Inputs
+### Input sources
 - Vision with 8x8 bit ADNS2620 vision chip found in the common optical mouse https://github.com/SteveJustin1963/tec-EYE
 - A microphone https://github.com/SteveJustin1963/tec-EAR
 - EEG (Electroencephalography) https://github.com/SteveJustin1963/tec-LACE
 - tactile https://github.com/SteveJustin1963/tec-TILE
 
 ### outputs
-- Output expressions can be sent to Speech SPO256 https://github.com/SteveJustin1963/tec-SPEECH
-- 8x8 LED matrix addon to make emoji shapes or a mouth or eye animated image https://github.com/SteveJustin1963/tec-8x8
-- Make a animatronic head that has head movement and incorporates the eyes, ears and mouth parts  https://github.com/SteveJustin1963/tec-FACE
+Classified output expressions can be sent to 
+- Speech SPO256 https://github.com/SteveJustin1963/tec-SPEECH
+- Display 8x8 LED matrix to make emoji shapes or a mouth or eye animated image https://github.com/SteveJustin1963/tec-8x8
+- Move an animatronic head with eyes, ears and mouth parts  https://github.com/SteveJustin1963/tec-FACE
+
 ### Both
 - ADC, DAC https://github.com/SteveJustin1963/tec-ADC-DAC
 
+### Circuits
+- https://easyeda.com/editor#id=ce6bdd0998024d589a624073c00b3b42|cf174ef8df6648e4804a04970f2bdf42
+- https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
 
-### proto cct
-https://easyeda.com/editor#id=ce6bdd0998024d589a624073c00b3b42|cf174ef8df6648e4804a04970f2bdf42
+## Iterate
+- try other RC tanks
+- try DOL matrix
 
-### Piezo TX/RX circuit
-
-https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
-
+## Ref
 
