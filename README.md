@@ -90,6 +90,31 @@ The goal of this tec-1 project is to use a simple version of reservoir computing
 
 I will use a piezo disk to transmit the signals into the medium, but this may be wrong as the resonate frequency may interfere, so tis can be replaced with a range of options. By experimenting i am aiming for standing waves to emerge long enough to be collected by receiver piezo disks. The was a TE project that used these disks to pickup sound through a wall. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
 
+### maths
+The mathematics for echos in a sphere filled with water is the same as for echos in a sphere filled with any other material. The echo is created when the sound waves reflect off of a surface. The size of the sphere will determine how long the echo will last.what is the wave equation for waves travel through a medium and how they reflect off of surfaces. 
+```
+The wave equation is:
+wave equation: ΔP/Δt = -Bv∇^2P - g∇h 
+where:
+ΔP/Δt is the change in pressure over time
+Bv is the Bulk modulus times the velocity
+∇^2P is the Laplacian of pressure
+g∇hand P is the gravitational potential times the gradient of pressure
+P is the pressure 
+```
+The wave equation is a differential equation that describes the propagation of waves. It is a second order partial differential equation.
+The wave equation is:
+```
+$$\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u$$
+where $u$ is the displacement of the wave, $t$ is time, $c$ is the speed of the wave, and $\nabla^2$ is the Laplacian operator.
+The wave equation is a linear equation, so it can be solved by the method of separation of variables.
+```
+code we.f95
+
+
+
+
+
 
 ### Input sources
 - Vision with 8x8 bit ADNS2620 vision chip found in the common optical mouse https://github.com/SteveJustin1963/tec-EYE
