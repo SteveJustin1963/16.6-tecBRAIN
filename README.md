@@ -1,6 +1,6 @@
 # tec-BRAIN
 
-This is a very difficult and ambitious project that will take many iterations to work. It will be more like research than a project for a while.
+This is a very difficult and ambitious project that will take much iteration to work. It will be more like research than a project for a while.
 
 
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
@@ -70,7 +70,7 @@ Reservoir computing has also been used to build successful models for a variety 
 Reservoir computing has a number of advantages over traditional neural networks, including:
 - simpler training – only the connection weights need to be trained, not the neuron states
 - fewer parameters – since the neuron states are not updated during training, there are fewer parameters to optimize
-- more robust – since the neuron states are not updated during training, the network is less likely to overfit the training data
+- more robust – since the neuron states are not updated during training, the network is less likely to over-fit the training data
 - better generalization – since the network is not “memorizing” the training data, it is more likely to generalize to new data
 
 However, reservoir computing also has a number of disadvantages, including:
@@ -85,12 +85,12 @@ Reservoir computing is a powerful computational paradigm that has been shown to 
 
 ## Project
 
-The goal of this tec-1 project is to use a simple version of reservoir computing to help process a complex input signal such as sound, sight and touch and generate a repeating pattern that can be processed by a sensor. I will try a range of mediums; wobbly object like a firm gelly, vibrating water that reflects a light pattern, etc. With experimentation I am looking for something when fed an input signal, it can generate a repeating pattern long enough for sensors to collect and store that data.  The repeating pattern expands into nodes and antinodes over various positions, thus expanding a complex input signal into a more simple recognisable pattern, which are easier for hardware and software methods to analyze. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy. A simple learning and classification system can develope from this and stored in a library of recognitions.
+The goal of this tec-1 project is to use a simple version of reservoir computing to help process a complex input signal such as sound, sight and touch and generate a repeating pattern that can be processed by a sensor. I will try a range of mediums; wobbly object like a firm jelly, vibrating water that reflects a light pattern, etc. With experimentation I am looking for something when fed an input signal, it can generate a repeating pattern long enough for sensors to collect and store that data.  The repeating pattern expands into nodes and antinodes over various positions, thus expanding a complex input signal into a simpler recognizable pattern, which are easier for hardware and software methods to analyze. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy. A simple learning and classification system can develop from this and stored in a library of recognitions.
 
-I will use a piezo disk to transmit the signals into the medium, but this may be wrong as the resonate frequency may interfere, so tis can be replaced with a range of options. By experimenting i am aiming for standing waves to emerge long enough to be collected by receiver piezo disks. The was a TE project that used these disks to pickup sound through a wall. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
+I will use a piezo disk to transmit the signals into the medium, but this may be wrong as the resonate frequency may interfere, so this can be replaced with a range of options. By experimenting i am aiming for standing waves to emerge long enough to be collected by receiver piezo disks. The was a TE project that used these disks to pick-up sound through a wall. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
 
-### maths
-The mathematics for echos in a sphere filled with water is the same as for echos in a sphere filled with any other material. The echo is created when the sound waves reflect off of a surface. The size of the sphere will determine how long the echo will last.what is the wave equation for waves travel through a medium and how they reflect off of surfaces. 
+### Maths
+The mathematics for echoes in a sphere filled with water is the same as for echoes in a sphere filled with any other material. The echo is created when the sound waves reflect off of a surface. The size of the sphere will determine how long the echo will last; what is the wave equation for waves travel through a medium and how they reflect off of surfaces. 
 ```
 The wave equation is:
 wave equation: ΔP/Δt = -Bv∇^2P - g∇h 
@@ -98,7 +98,7 @@ where:
 ΔP/Δt is the change in pressure over time
 Bv is the Bulk modulus times the velocity
 ∇^2P is the Laplacian of pressure
-g∇hand P is the gravitational potential times the gradient of pressure
+g∇h and P is the gravitational potential times the gradient of pressure
 P is the pressure 
 ```
 The wave equation is a differential equation that describes the propagation of waves. It is a second order partial differential equation.
@@ -136,7 +136,7 @@ Classified output expressions can be sent to
 - try other RC tanks
 - try DOL matrix
 - chaos ccts
-- bollow from 2D cellular automata GOL idea
+- follow from 2D cellular automata GOL idea
 - optical loop
 - neural / synthetic / organic
 - put into https://github.com/SteveJustin1963/tec-BOT
