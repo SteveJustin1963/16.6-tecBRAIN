@@ -4,7 +4,6 @@ This is a very difficult and ambitious project that will take many iterations to
 
 
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
-![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/res1.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
 
 
@@ -86,7 +85,7 @@ Reservoir computing is a powerful computational paradigm that has been shown to 
 
 ## Project
 
-The goal of this tec-1 project is to use a simple version of reservoir computing to help process a complex input signal such as sound, sign and rouch and generate a repeating pattern that can be processed by a sensor. I will try a range of mediums; wobbly object like a firm gelly, vibrating water that reflects a light pattern, etc. With experimentation I am looking for something when fed an input signal, it can generate a repeating pattern long enough for sensors to collect and store that data.  The repeating pattern expands into nodes and antinodes over various positions, thus expanding a complex input signal into a more simple recognisable pattern, which are easier for hardware and software methods to analyze. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy. A simple learning and classification system can develope from this and stored in a library of recognitions.
+The goal of this tec-1 project is to use a simple version of reservoir computing to help process a complex input signal such as sound, sight and touch and generate a repeating pattern that can be processed by a sensor. I will try a range of mediums; wobbly object like a firm gelly, vibrating water that reflects a light pattern, etc. With experimentation I am looking for something when fed an input signal, it can generate a repeating pattern long enough for sensors to collect and store that data.  The repeating pattern expands into nodes and antinodes over various positions, thus expanding a complex input signal into a more simple recognisable pattern, which are easier for hardware and software methods to analyze. It is analogous to a RC or LC matrix, each node resonating and storing a part of the overall signal energy. A simple learning and classification system can develope from this and stored in a library of recognitions.
 
 I will use a piezo disk to transmit the signals into the medium, but this may be wrong as the resonate frequency may interfere, so tis can be replaced with a range of options. By experimenting i am aiming for standing waves to emerge long enough to be collected by receiver piezo disks. The was a TE project that used these disks to pickup sound through a wall. Experimentation is needed to get the best result. Transmit and receive circuits are custom made. The 8 receivers are run through and 8 port ADC. Mint code then runs pattern regression to classify the signals into hash tables that represent the samples data. Sample time has to be short to not overload the tiny tec-1 system. The use of AP9511 may help in the math work. 
 
