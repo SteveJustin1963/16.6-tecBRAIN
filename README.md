@@ -146,6 +146,7 @@ Classified output expressions can be sent to
 - https://www.electroschematics.com/simple-surface-microphone/
 - https://www.edn.com/increase-piezoelectric-transducer-acoustic-output-with-a-simple-circuit/
 - http://www.datasheetdir.com/Adc0808-adc0809-8-bit-Compatible-Converters-With-8-channel-Analog-Multiplexer+Application-Notes
-
+- https://en.wikipedia.org/wiki/Gated_recurrent_unit
+- 
 
 
