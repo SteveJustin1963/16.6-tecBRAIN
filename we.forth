@@ -1,5 +1,4 @@
-\ untested
-\ convert to forth 83 code
+ \ forth 83 code
 
 \ Wave equation
 
