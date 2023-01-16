@@ -1,4 +1,9 @@
 \\ simple recurrent neural network (RNN) code in c. assume a 8 bit   integers as the data type
+\\ code implements a simple recurrent neural network (RNN) with 8 bit integers as the data type. 
+\\ It uses a loop over 8 time steps to compute the hidden state and the output of the RNN. 
+\\ The hidden state is computed by taking the input vector and multiplying it by a 8x8 weight matrix 
+\\ and adding a bias vector. The output is computed in a similar manner, but using the hidden state 
+\\ as the input vector and a different 8x8 weight matrix and bias vector.
 --- 
 
 #include <stdio.h>
