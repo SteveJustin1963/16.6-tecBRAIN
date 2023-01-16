@@ -142,3 +142,22 @@ create b_output 1024 allot
     hidden i c@ w_hidden i 1024 c@ + b_hidden i c@ + b_hidden i c@ + + c!
 repeat
 \\\\\\\\\\\\\\\\\\
+create input 1024 allot - This creates an input data space of 1024 bytes and allocates it.
+create hidden 1024 allot - This creates a hidden data space of 1024 bytes and allocates it.
+create output 1024 allot - This creates an output data space of 1024 bytes and allocates it.
+create w_input 1024 1024 allot - This creates a weight matrix for the input data space of 1024x1024 bytes and allocates it.
+create w_hidden 1024 1024 allot - This creates a weight matrix for the hidden data space of 1024x1024 bytes and allocates it.
+create w_output 1024 1024 allot - This creates a weight matrix for the output data space of 1024x1024 bytes and allocates it.
+create b_input 1024 allot - This creates a bias vector for the input data space of 1024 bytes and allocates it.
+create b_hidden 1024 allot - This creates a bias vector for the hidden data space of 1024 bytes and allocates it.
+create b_output 1024 allot - This creates a bias vector for the output data space of 1024 bytes and allocates it.
+0 1024 begin - This begins a loop over the time steps which will iterate 1024 times.
+    0 1024 begin - This begins a loop over the hidden state which will iterate 1024 times.
+        hidden i c@ input i c@ + b_input i c@ + b_input i c@ + + c! - This takes the current hidden state value, adds the current 
+        input value, adds the current bias value, and stores the result in the current hidden state.
+    repeat - This ends the loop over the hidden state.
+    hidden i c@ w_hidden i 1024 c@ + b_hidden i c@ + b_hidden i c@ + + c! - This takes the current hidden state value, 
+multiplies it by the current weight matrix value, adds the current bias value, and stores the result in the current output state.
+repeat - This ends the loop over the time steps.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
