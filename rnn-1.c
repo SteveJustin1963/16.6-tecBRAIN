@@ -5,7 +5,7 @@
 \\ and adding a bias vector. The output is computed in a similar manner, but using the hidden state 
 \\ as the input vector and a different 8x8 weight matrix and bias vector.
 --- 
-
+; 1 byte
 #include <stdio.h>
 
 int main()
@@ -47,3 +47,98 @@ int main()
 
     return 0;
 }
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\
+; 1k buffer
+
+#include <stdio.h>
+
+int main()
+{
+    int input[1024]; // 1024 bit data type
+    int hidden[1024]; // 1024 bit hidden state
+    int output[1024]; // 1024 bit output
+
+    // Initialize weights
+    int w_input[1024][1024];
+    int w_hidden[1024][1024];
+    int w_output[1024][1024];
+
+    // Initialize bias
+    int b_input[1024];
+    int b_hidden[1024];
+    int b_output[1024];
+
+    // Loop over the time steps
+    for(int t=0; t<1024; t++){
+        // Compute the hidden state
+        for(int i=0; i<1024; i++){
+            hidden[i] = 0;
+            for(int j=0; j<1024; j++){
+                hidden[i] += input[j] * w_input[i][j];
+            }
+            hidden[i] += b_input[i];
+        }
+
+        // Compute the output
+        for(int i=0; i<1024; i++){
+            output[i] = 0;
+            for(int j=0; j<1024; j++){
+                output[i] += hidden[j] * w_hidden[i][j];
+            }
+            output[i] += b_hidden[i];
+        }
+    }
+
+    return 0;
+}
+\\\\\\\\\\\\\\\\\\\\\\\\
+forth 83
+
+
+: main  ( -- ) 
+        create input 1024 8 allot
+        create hidden 1024 8 allot
+        create output 1024 8 allot
+
+        create w_input 1024 1024 8 allot
+        create w_hidden 1024 1024 8 allot
+        create w_output 1024 1024 8 allot
+
+        create b_input 1024 8 allot
+        create b_hidden 1024 8 allot
+        create b_output 1024 8 allot
+
+        0 1024 begin
+            0 1024 begin
+                hidden i 8 * input i 8 * + b_input i 8 +
+            repeat
+            hidden i 8 * w_hidden i 1024 8 * + b_hidden i 8 +
+        repeat
+    ;
+\\\\\\\\\\\\\\\\\\\\\
+The allot keyword in Forth 83 is used to allocate a specified amount of memory for a given variable. 
+It takes the size of the memory as an argument and allocates that much memory for 
+the variable. For example, "create foo 1024 8 allot" would allocate 8 kb of memory for the variable "foo".
+\\\\\\\\\\\\\\\\\\
+\\ use more primitives
+create input 1024 allot
+create hidden 1024 allot
+create output 1024 allot
+
+create w_input 1024 1024 allot
+create w_hidden 1024 1024 allot
+create w_output 1024 1024 allot
+
+create b_input 1024 allot
+create b_hidden 1024 allot
+create b_output 1024 allot
+
+0 1024 begin
+    0 1024 begin
+        hidden i c@ input i c@ + b_input i c@ + b_input i c@ + + c!
+    repeat
+    hidden i c@ w_hidden i 1024 c@ + b_hidden i c@ + b_hidden i c@ + + c!
+repeat
+\\\\\\\\\\\\\\\\\\
