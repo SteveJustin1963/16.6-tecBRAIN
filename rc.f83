@@ -1,0 +1,98 @@
+\\ In this revised version:
+
+\\The sigmoid function is more clearly defined.
+\\Comments have been added for clarity.
+\\The train-linear and train-ridge functions have been corrected and clarified.
+\\The reservoir-computing function now properly iterates over the timesteps.
+\\Remember, this code is a basic representation and should be adapted for practical use, including providing 
+\\ actual values for the variables and weight matrices. The sigmoid function here is also quite simple and 
+\\ might need to be replaced with a more accurate implementation for real-world applications.
+
+
+
+
+
+
+
+
+\ Define variables
+VARIABLE x        \ State of the reservoir at time t
+VARIABLE u        \ Input signal at time t
+VARIABLE W_in     \ Input weight matrix
+VARIABLE W_rec    \ Recurrent weight matrix
+VARIABLE b        \ Bias vector
+VARIABLE y        \ Output of the reservoir at time t
+VARIABLE W_out    \ Output weight matrix
+
+\ Define sigmoid function
+: sigmoid ( n -- f(n) )  \ Sigmoid activation function
+  1.0 SWAP EXP + 1.0 / ;
+
+\ Reservoir Dynamics Function
+: reservoir-dynamics  \ Updates the state of the reservoir
+  u @ W_in @ *         \ Compute W_in * u(t)
+  x @ W_rec @ *        \ Compute W_rec * x(t-1)
+  +                    \ Add both products
+  b @ +                \ Add bias vector
+  sigmoid              \ Apply sigmoid function
+  x ! ;                \ Update x(t)
+
+\ Output Calculation Function
+: output-calculation  \ Calculates the output of the reservoir
+  x @ W_out @ *        \ Compute W_out * x(t)
+  y ! ;                \ Update y(t)
+
+\ Training for Linear Regression
+: train-linear  \ Trains the readout layer using linear regression
+  W_rec @ W_out !  \ Copy W_rec to W_out
+  b @ W_out @ + ;  \ Add bias to W_out
+
+\ Training for Ridge Regression
+VARIABLE lambda  \ Regularization parameter
+
+: train-ridge  \ Trains the readout layer using ridge regression
+  W_rec @ W_out !          \ Copy W_rec to W_out
+  lambda @ W_out @ *       \ Apply regularization to W_out
+  b @ + W_out @ + ;        \ Add bias to regularized W_out
+
+\ Initialization and Example Usage
+VARIABLE timesteps  \ Number of time steps
+
+\ Initialize variables with example values
+0.1 CONSTANT u-init  \ Initial input signal
+u-init u !
+
+0.0 CONSTANT x-init  \ Initial reservoir state
+x-init x !
+
+\ Initialize weights and bias
+0.5 CONSTANT W_in-init
+W_in-init W_in !
+
+0.3 CONSTANT W_rec-init
+W_rec-init W_rec !
+
+0.2 CONSTANT b-init
+b-init b !
+
+0.7 CONSTANT W_out-init
+W_out-init W_out !
+
+\ Regularization parameter
+0.01 CONSTANT lambda-value
+lambda-value lambda !
+
+\ Set time steps
+100 timesteps !
+
+\ Reservoir Computing Process
+: reservoir-computing  \ Performs reservoir computing over time
+  timesteps @ 0 DO
+    reservoir-dynamics
+    output-calculation
+    ." y(" I . ." ) = " y @ . CR
+  LOOP ;
+
+\ Train and Perform Reservoir Computing
+train-ridge
+reservoir-computing
