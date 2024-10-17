@@ -8,7 +8,7 @@ This is a very difficult and ambitious project that will take much iteration to 
 
 - The project aims to utilize a simplified version of reservoir computing 
   - to process complex input signals such as
-    - sound, sight, and touch,
+    - vision, sight, tactile, mind
   - and generate a repeating pattern that can be collected and analyzed by sensors.
 
 - Various mediums, such as
@@ -42,23 +42,39 @@ This is a very difficult and ambitious project that will take much iteration to 
   - that is trained to generate a repeating pattern.
   - The readout layer can be trained using methods such as
     - linear regression
-    - or Ridge regression.
+    - ridge regression
 
 
-
-## Input sources
-- Vision with 8x8 bit ADNS2620 vision chip found in the common optical mouse https://github.com/SteveJustin1963/tec-EYE
-- A microphone https://github.com/SteveJustin1963/tec-EAR
-- EEG (Electroencephalography) https://github.com/SteveJustin1963/tec-LACE
-- tactile https://github.com/SteveJustin1963/tec-TILE
+### Input sources
+- Vision
+  - 8x8 bit ADNS2620 vision chip
+  - found in the common optical mouse
+  - https://github.com/SteveJustin1963/tec-EYE
+- Sound
+  - https://github.com/SteveJustin1963/tec-EAR
+- Tactile
+  - https://github.com/SteveJustin1963/tec-TILE
+- Mind
+  - Voice commands
+  - EEG (Electroencephalography) https://github.com/SteveJustin1963/tec-LACE
 
 ## Outputs
-Classified output expressions can be sent to 
-- Speech SPO256 https://github.com/SteveJustin1963/tec-SPEECH
-- Display 8x8 LED matrix to make emoji shapes or a mouth or eye animated image https://github.com/SteveJustin1963/tec-8x8
-- Move an animatronic head with eyes, ears and mouth parts  https://github.com/SteveJustin1963/tec-FACE
-
-## Circuits
+Classified inputs then modify the main loop to activate actions 
+- Speech
+  - SPO256
+  - https://github.com/SteveJustin1963/tec-SPEECH
+- Display
+  - 8x8 LED matrix to make emoji shapes
+  - or a mouth or eye animated image
+  - https://github.com/SteveJustin1963/tec-8x8
+- Movement
+  - animatronic head with eyes, ears and mouth parts
+  - https://github.com/SteveJustin1963/tec-FACE
+  - Arms
+    - https://github.com/SteveJustin1963/tec-ROBOT-ARM
+   
+  
+### Circuits
 - https://github.com/SteveJustin1963/tec-ADC-DAC
 - https://easyeda.com/editor#id=ce6bdd0998024d589a624073c00b3b42|cf174ef8df6648e4804a04970f2bdf42
 - https://easyeda.com/editor#id=8672ed23f7734ee4bfaa27882990acbf|6ef58b1dda594797a48eb9d62c0d53f2
