@@ -6,10 +6,43 @@ This is a very difficult and ambitious project that will take much iteration to 
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
 
-The project aims to utilize a simplified version of reservoir computing to process complex input signals such as sound, sight, and touch, and generate a repeating pattern that can be collected and analyzed by sensors. Various mediums, such as wobbly objects and vibrating water, will be tested to achieve this goal. The repeating pattern expands into nodes and antinodes over different positions, simplifying the complex input signal and making it easier for hardware and software methods to recognize and classify. A piezo disk will be used to transmit the signals into the medium, but alternative options may be considered if the resonant frequency interferes. The goal is to achieve standing waves that can be collected by receiver piezo disks. The project will use custom-made transmit and receive circuits, and an 8-port ADC will be used to run the 8 receivers. The use of Mint code and pattern regression will be employed to classify the signals into hash tables that represent the sample data. The sample time will be kept short to avoid overloading the system. The use of AP9511 may assist in the mathematical work.
+- The project aims to utilize a simplified version of reservoir computing 
+  - to process complex input signals such as
+    - sound, sight, and touch,
+  - and generate a repeating pattern that can be collected and analyzed by sensors.
 
+- Various mediums, such as
+  - wobbly objects and vibrating water, will be tested to achieve this goal.
+- The repeating pattern expands into nodes and antinodes over different positions
+  - simplifying the complex input signal
+  - and making it easier for hardware and software methods to recognize and classify.
 
-The math behind reservoir computing is based on the theory of dynamical systems and machine learning. It involves the use of a fixed, high-dimensional recurrent neural network called a "reservoir" that is trained to output a simplified version of the input signal. This is done by adjusting the weights of the connections between the neurons in the reservoir, which are chosen randomly at the beginning. The output of the reservoir is then used as the input to a simple readout layer that is trained to generate a repeating pattern. The readout layer can be trained using methods such as linear regression or Ridge regression.
+- A piezo disk will be used to transmit the signals into the medium,
+- but alternative options may be considered if the resonant frequency interferes.
+- The goal is to achieve standing waves that can be collected by receiver piezo disks.
+- The project will use
+  - custom-made transmit and receive circuits,
+  - an 8-port ADC will be used to run the 8 receivers.
+  - The use of Mint code and pattern regression will be employed to
+    - classify the signals into hash tables that represent the sample data.
+    - The sample time will be kept short to avoid overloading the system.
+    - The use of AP9511 may assist in the mathematical work.
+
+### maths 
+- The math behind reservoir computing is based on
+  - the theory of dynamical systems
+  - and machine learning.
+- It involves the use of
+  - a fixed, high-dimensional recurrent neural network called a "reservoir"
+  - that is trained to output a simplified version of the input signal.
+  - This is done by adjusting the weights of the connections between the neurons in the reservoir,
+  - which are chosen randomly at the beginning.
+- The output of the reservoir is then used as
+  - the input to a simple readout layer
+  - that is trained to generate a repeating pattern.
+  - The readout layer can be trained using methods such as
+    - linear regression
+    - or Ridge regression.
 
 
 
