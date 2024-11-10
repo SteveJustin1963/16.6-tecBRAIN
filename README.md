@@ -91,3 +91,113 @@ Classified input signals will trigger corresponding actions, such as:
 
 ---
  
+
+ 
+
+### Steps to Build the **tec-BRAIN**
+
+#### **Phase 1: Research and Concept Development**
+1. Define the project goals:
+   - Simplify complex input signals.
+   - Generate and classify repeating patterns.
+2. Research **reservoir computing**:
+   - Understand dynamical systems theory and neural networks.
+   - Explore methods for simplifying input signals.
+3. Identify and procure components:
+   - Input sources (vision, sound, tactile, EEG).
+   - Output devices (speech synthesizer, LED matrix, animatronic parts).
+   - ADC, piezo disks, and custom circuitry.
+
+---
+
+#### **Phase 2: Medium and Signal Experimentation**
+4. Experiment with mediums:
+   - Test vibrating water, elastic objects, or other resonant materials.
+5. Inject signals into the medium:
+   - Use a piezo disk or alternative transmitters.
+6. Analyze medium behavior:
+   - Observe formation of standing waves (nodes and antinodes).
+   - Refine the signal input to optimize wave patterns.
+
+---
+
+#### **Phase 3: Signal Reception and Classification**
+7. Design the receiving system:
+   - Use multiple piezo disks to capture standing waves.
+   - Connect them to an **8-port ADC** for signal processing.
+8. Develop signal classification:
+   - Write **Mint code** for pattern regression.
+   - Use hash tables to store and recognize classified patterns.
+9. Integrate the **AP9511 chip**:
+   - Perform advanced mathematical operations efficiently.
+
+---
+
+#### **Phase 4: Input Source Integration**
+10. Implement input devices:
+    - **Vision**: Integrate the ADNS2620 chip.
+    - **Sound**: Configure microphones or sound sensors.
+    - **Tactile**: Use pressure or touch-sensitive sensors.
+    - **Mind**: Integrate EEG or voice command modules.
+11. Test input data flow:
+    - Ensure proper signal transmission to the medium.
+
+---
+
+#### **Phase 5: Output Development**
+12. Program output systems:
+    - **Speech**: Interface with the SP0256 synthesizer.
+    - **Display**: Animate the 8x8 LED matrix.
+    - **Movement**: Control animatronic components (head, arms).
+13. Create feedback loops:
+    - Allow classified signals to modify outputs dynamically.
+
+---
+
+#### **Phase 6: Circuit Design and Optimization**
+14. Build custom circuits:
+    - Transmit and receive circuits for piezo disks.
+    - ADC integration for signal capture.
+15. Test and refine circuits:
+    - Address frequency interference and optimize signal clarity.
+
+---
+
+#### **Phase 7: System Integration**
+16. Connect all components:
+    - Link input sources, medium, receiving system, and output devices.
+17. Develop main loop logic:
+    - Process classified signals to trigger actions.
+    - Implement real-time feedback for adaptive behavior.
+
+---
+
+#### **Phase 8: Testing and Iteration**
+18. Test the full system:
+    - Ensure inputs generate meaningful patterns.
+    - Verify outputs correspond to classified signals.
+19. Refine based on results:
+    - Adjust inputs, mediums, or algorithms for better performance.
+20. Document findings and improve:
+    - Record experimental data and refine design iteratively.
+
+---
+
+#### **Phase 9: Advanced Features**
+21. Introduce learning capabilities:
+    - Incorporate dynamic adjustments to the reservoir or output layers.
+22. Explore additional mediums or input sources:
+    - Experiment with novel ways to expand functionality.
+
+---
+
+#### **Phase 10: Finalization**
+23. Optimize for stability and efficiency:
+    - Ensure all components operate smoothly together.
+24. Package and document:
+    - Create a cohesive design and detailed documentation for the system.
+
+
+
+
+ 
