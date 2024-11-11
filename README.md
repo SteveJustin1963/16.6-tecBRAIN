@@ -82,10 +82,11 @@ Classified input signals will trigger corresponding actions, such as:
 
 3. **Movement**
    - **Animatronics** (e.g., head with movable eyes, ears, and mouth).
-     - Repository: [tec-FACE](https://github.com/SteveJustin1963/tec-FACE)
+     - [tec-FACE](https://github.com/SteveJustin1963/tec-FACE)
    - **Robotic arms**:
-     - Repository: [tec-ROBOT-ARM](https://github.com/SteveJustin1963/tec-ROBOT-ARM)
-
+     - [tec-ROBOT-ARM](https://github.com/SteveJustin1963/tec-ROBOT-ARM)
+   - **Robot body**
+     - [tec-ROBOT](https://github.com/SteveJustin1963/tec-ROBOT)
 ---
  
 ---
