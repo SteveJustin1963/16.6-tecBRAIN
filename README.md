@@ -327,6 +327,50 @@ END IF
 2. Improve the **reservoir update logic** to respond meaningfully to input variations.
 3. Verify the input signals have enough variability to trigger different classifications.
 
+Here's a breakdown of the mathematical steps in the code:
+
+### Initialization Steps:
+1. **Hash Table Creation:**
+   - \( \text{hash\_table} = \text{rand}(n, n) \cdot \text{linspace}(0.1, 1, n)^T \)
+   - Generates a matrix with random values scaled by a linear gradient.
+
+### Main Program Steps (Iterated for Each Channel):
+1. **Raw Signal Generation:**
+   - \( \text{raw\_signal}(t) = \sin(2\pi t \cdot 0.01 \cdot \text{channel}) + \text{noise} \)
+   - Creates a sine wave with added random noise.
+
+2. **Normalization:**
+   - \( \text{normalized\_signal} = \frac{\text{raw\_signal} - \min(\text{raw\_signal})}{\max(\text{raw\_signal}) - \min(\text{raw\_signal})} \cdot (\text{max\_value} - \text{min\_value}) + \text{min\_value} \)
+   - Rescales the signal to the range \([ \text{min\_value}, \text{max\_value} ]\).
+
+3. **Feature Extraction (FFT):**
+   - \( \text{features} = |\text{FFT}(\text{normalized\_signal})| \)
+   - Takes the magnitude of the Fourier transform of the normalized signal.
+   - Uses only positive frequency components: \( \text{features} = \text{features}(1:\lfloor n/2 \rfloor) \).
+
+4. **Peak Detection:**
+   - \( \text{peaks} = \{ x \in \text{features} \mid x > \text{threshold} \} \)
+   - Identifies features that exceed the threshold.
+
+5. **Reservoir Initialization:**
+   - \( \text{reservoir\_state} = \text{rand}(n, 1) \cdot 0.5 \)
+   - Initializes the reservoir state with random values scaled down by 0.5.
+
+6. **Reservoir Update:**
+   - \( \text{reservoir\_state} = \tanh(\text{weights} \cdot \text{input\_sample} + \text{reservoir\_state}) \)
+   - Applies a non-linear update using the hyperbolic tangent function, weighted input, and the current state.
+
+7. **Classification Using Hash Table:**
+   - \( \text{distances} = \sum (\text{hash\_table} - \text{reservoir\_state}')^2 \)
+   - Computes Euclidean distance between reservoir state and each entry in the hash table.
+   - \( \text{classification} = \arg\min(\text{distances}) \)
+   - Finds the hash table entry closest to the reservoir state.
+
+8. **Output Action:**
+   - Triggers an output or action based on the classification result.
+
+
+
 
 ```octave
 % Initialization
