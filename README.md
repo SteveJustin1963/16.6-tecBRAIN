@@ -34,9 +34,10 @@ To process complex input signals—such as **vision**, **sound**, **tactile**, a
      - An **8-port ADC** for capturing data from eight receivers.
 
 3. **Data Processing**
-   - Use **Mint code** for regression and classification of patterns into hash tables.
+   - Use **Mint code** for regression and classification of patterns into hash tables. I dont think we have enough bandwidth.
    - Leverage the **AP9511 chip** for advanced mathematical processing.
    - Keep sampling periods brief to avoid system overload.
+   - however mint +mpu would be far too slow we will try and off load this to mcu on front end
 
 ---
 
