@@ -1,5 +1,5 @@
 ![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png)
-![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/steps.png)
+ 
 
 # **tec-BRAIN Project Overview**
 
