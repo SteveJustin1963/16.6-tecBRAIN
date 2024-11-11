@@ -1,4 +1,5 @@
-![](https://github.com/SteveJustin1963/tec-BRAIN/blob/master/pics/jelly-brain.png) ![image](https://github.com/user-attachments/assets/ef697a15-2fd5-4998-b684-a706c5836a2a)
+![image](https://github.com/user-attachments/assets/e97f552e-997b-48df-96fe-2f23edd4d1ad)
+![image](https://github.com/user-attachments/assets/ef697a15-2fd5-4998-b684-a706c5836a2a)
 ![image](https://github.com/user-attachments/assets/bd599212-a03d-47c2-bf62-7cb53c18909e) ![image](https://github.com/user-attachments/assets/b4fb3921-aa3f-4346-b37b-b75451d935dc)
 
 
